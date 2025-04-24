@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>页面标题</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="Confirm">
+
+	<div class="Confirm-Header">
+		<a class="Confirm-Header-Button Confirm-Header-Button_Close" href="javascript: void(0)"></a>
+		<a class="Confirm-Header-Button Confirm-Header-Button_Minimize" href="javascript: void(0)"></a>
+		<a class="Confirm-Header-Button Confirm-Header-Button_Maximize" href="javascript: void(0)"></a>
+		<a class="Confirm-Header-Button Confirm-Header-Button_Settings" href="javascript: void(0)"></a>
+		<h1 class="Confirm-Header-Title">确认框标题</h1>
+	</div>
+	
+	<div class="Confirm-Body">
+		<h2 class="Confirm-Body-Title">确认框内容</h2>
+		<figure class="Boi">
+			<div class="Boi-Blush Boi-Blush_L"></div>
+			<div class="Boi-Blush Boi-Blush_R"></div>
+			<div class="Boi-Eye Boi-Eye_L"></div>
+			<div class="Boi-Eye Boi-Eye_R"></div>
+			<div class="Boi-Mouth"></div>
+		</figure>
+		<a class="Confirm-Body-Button Confirm-Body-Button_Acc" href="javascript: void(0)">同意按钮文本</a>
+		<a class="Confirm-Body-Button Confirm-Body-Button_Rej" href="javascript: void(0)">拒绝按钮文本</a>
+	</div>
+</section>
+
+<!-- 配置弹框 -->
+<div class="Settings-Modal" style="display: none;">
+    <div class="Settings-Content">
+        <div class="Settings-Header">
+            <h2>配置设置</h2>
+            <button class="Settings-Close">×</button>
+        </div>
+        <div class="Settings-Body">
+            <div class="Settings-Form">
+                <div class="Settings-Form-Group">
+                    <label>页面标题</label>
+                    <input type="text" id="pageTitle" value="Uninstall Boi">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>确认框标题</label>
+                    <input type="text" id="confirmHeaderTitle" value="">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>确认框内容</label>
+                    <input type="text" id="confirmBodyTitle" value="">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>同意按钮文本</label>
+                    <input type="text" id="confirmButtonText" value="同意">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>拒绝按钮文本</label>
+                    <input type="text" id="cancelButtonText" value="拒绝">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>同意弹窗文本</label>
+                    <input type="text" id="agreeModalText" value="您已同意">
+                </div>
+                <div class="Settings-Form-Group">
+                    <label>拒绝消息列表</label>
+                    <textarea id="messagesList" rows="6">
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="Settings-Footer">
+            <button class="Settings-Save">保存</button>
+            <button class="Settings-Cancel">取消</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
